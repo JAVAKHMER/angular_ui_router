@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>angular ui rout</title>
+  <script src="/static/lib/angular/angular.min.js"></script>
+  <script src="/static/lib/angular/angular-ui-router.js"></script>
+  <script src="/static/js/controllers.js"></script>
+</head>
+<body ng-app="myApp">
+	<ul >
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="about">About</a></li>
+    </ul>
+
+	<!-- MAIN CONTENT -->
+	<!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+	<div class="container">
+	    <div ui-view></div>
+	</div>
+</body>
+</html>
